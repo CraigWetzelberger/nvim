@@ -1,0 +1,6 @@
+-- local wk = require("which-key")
+-- wk.register({
+--   h = {
+--     name ="harpoon",
+--     x = { function() require('harpoon.mark').add_file() end, "Mark file" }
+--   }, { prefix = "<leader>" }})

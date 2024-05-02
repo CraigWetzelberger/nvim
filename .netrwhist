@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/cdwetzelberger/.local/share/nvim'
+let g:netrw_dirhist_6='/Users/cdwetzelberger/.local/share'
+let g:netrw_dirhist_5='/Users/cdwetzelberger/.local/share/nvim'
+let g:netrw_dirhist_4='/Users/cdwetzelberger/.local/share'
+let g:netrw_dirhist_3='/Users/cdwetzelberger/.local/share/nvim/cdw'
+let g:netrw_dirhist_2='/Users/cdwetzelberger/.local/share/nvim'
+let g:netrw_dirhist_1='/Users/cdwetzelberger/.local/share/nvim/cdw'
+let g:netrw_dirhist_0='/Users/cdwetzelberger/.local/share/nvim'
+let g:netrw_dirhist_9='/Users/cdwetzelberger/.local/share/nvim/cdw'
+let g:netrw_dirhist_8='/Users/cdwetzelberger/.local/share/nvim'
