@@ -11,13 +11,16 @@ return require('packer').startup(function(use)
   -- use 'navarasu/onedark.nvim'
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.6',
+    'nvim-telescope/telescope.nvim', -- tag = '0.1.6',
     -- or                            , branch = '0.1.x',
     requires = { 
       {'nvim-lua/plenary.nvim'} ,
-      {'nvim-telescope/telescope.nvim' }
-
-    }
+      { "nvim-telescope/telescope-live-grep-args.nvim" },
+      { 'nvim-telescope/telescope-fzf-native.nvim', run = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' },
+    },
+    config = function()
+      require("telescope").load_extension("live_grep_args")
+    end
   }
 
 
@@ -33,7 +36,8 @@ return require('packer').startup(function(use)
  --      }
  --    }
  --
-
+    -- use('nvim-pack/nvim-spectre') --intreseting
+    use('https://github.com/adelarsq/vim-matchit')
     use('rking/ag.vim') 
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
