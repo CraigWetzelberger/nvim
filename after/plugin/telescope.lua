@@ -23,7 +23,10 @@ vim.keymap.set('n', '<leader>fg', function()
 end, { desc = 'Grep a using inner word or enter'})
 
 vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<C-p>', extensions.live_grep_args.live_grep_args, {})
+-- vim.keymap.set('n', '<C-p>', extensions.live_grep_args.live_grep_args, {})
+vim.keymap.set('n', '<C-p>', function() 
+  vim.cmd('CtrlP')
+end, {})
 
 vim.keymap.set('n', '<leader>fb', function()
      builtin.buffers({preview_title = 'List Open Buffers'})

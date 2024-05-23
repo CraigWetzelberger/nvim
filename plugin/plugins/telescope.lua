@@ -11,9 +11,15 @@ require('telescope').setup{
         -- map actions.which_key to <C-h> (default: <C-/>)
         -- actions.which_key shows the mappings for your picker,
         -- e.g. git_{create, delete, ...}_branch for the git_branches picker
-        ["<C-?>"] = "which_key"
-      }
-    }
+        ["<C-?>"] = "which_key",
+        -- ["<C-w>"] = actions.send_selected_to_qflist,
+        -- ["<C-q>"] = actions.send_to_qflist,
+      },
+      -- n = {
+      --   ["<C-w>"] = actions.send_selected_to_qflist,
+      --   ["<C-q>"] = actions.send_to_qflist,
+      -- },
+    },
   },
   pickers = {
     pickers = {

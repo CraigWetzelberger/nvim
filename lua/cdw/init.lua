@@ -4,3 +4,4 @@ require("cdw.remap")
 require("cdw.set")
 
 require("cdw.packer")
+-- require("cdw.example_telescope_extension")
