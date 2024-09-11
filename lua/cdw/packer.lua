@@ -39,13 +39,17 @@ return require('packer').startup(function(use)
  --    }
  --
     -- use('nvim-pack/nvim-spectre') --intreseting
-    use('https://github.com/adelarsq/vim-matchit')
+    -- use('https://github.com/adelarsq/vim-matchit')
+    use('andymass/vim-matchup')
     use('rking/ag.vim') 
+
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('nvim-treesitter/playground')
+    use('tree-sitter/tree-sitter-embedded-template')
     use('theprimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
+    use('github/copilot.vim')
 
     use {
       'VonHeikemen/lsp-zero.nvim',
